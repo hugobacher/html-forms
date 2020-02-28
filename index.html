@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulär</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Name</legend>
+				<label for="fname">First: <label>
+				<input type="text" id="fname" name="fname">
+				<label for="lname">Last: <label>
+				<input type="text" id="fname" name="lname">
+			</fieldset>
+			<fieldset>
+				<legend>Gender</legend>
+				<label for="male">Male: </label>
+				<input type="radio" id="male" name="gender" value="male">
+				<br>
+				<label for="female">Female: </label>
+				<input type="radio" id="female" name="gender" value="female">
+				<br>
+				<label for="other">Other: </label>
+				<input type="radio" id="female" name="gender" value="other">
+				<br>
+				<label for="otherGender">Other genders: </label>
+				<select id="otherGender" name="gender">
+					<option value="other">Other</option>
+					<option value="queer">LTBQ</option>
+					<option value="heli">Attack helicopter</option>
+					<option value="undefined">Undefined</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Other facts</legend>
+				<label for="birthday">Birthday:</label>
+				<input type="date" id="birthday" name="birthday">
+			</fieldset>
+		</form>
+	</body>
+</html> 
