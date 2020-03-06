@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Formulär</title>
+		<title>Form</title>
 	</head>
 	<body>
-		<form>
+		<h1>Form</h1>
+		<p>A form about yourself for the jobb interview</p>
+		<form action="done.html">
 			<fieldset>
 				<legend>Name</legend>
 				<label for="fname">First: <label>
@@ -22,13 +24,13 @@
 				<input type="radio" id="female" name="gender" value="female">
 				<br>
 				<label for="other">Other: </label>
-				<input type="radio" id="female" name="gender" value="other">
+				<input type="radio" id="other" name="gender" value="other">
 				<br>
 				<label for="otherGender">Other genders: </label>
 				<select id="otherGender" name="gender">
 					<option value="other">Other</option>
-					<option value="queer">LTBQ</option>
-					<option value="heli">Attack helicopter</option>
+					<option value="queer">Bigender</option>
+					<option value="heli">Non-Binary</option>
 					<option value="undefined">Undefined</option>
 				</select>
 			</fieldset>
@@ -36,7 +38,21 @@
 				<legend>Other facts</legend>
 				<label for="birthday">Birthday:</label>
 				<input type="date" id="birthday" name="birthday">
+				<br>
+				<label for="find">How did you find this website?</label>
+				<br>
+				<input type="checkbox" id="find" name="find" value="friend">A friend</input>
+				<br>
+				<input type="checkbox" id="find" name="find" value="family">A family member</input>
+				<br>
+				<input type="checkbox" id="find" name="find" value="ads">Ads</input>
+				<br>
+				<input type="checkbox" id="find" name="find" value="google">Google</input>
+				<br>
+				<label for="interests">Your interests:</label>
+				<textarea id="interests" name="interests"></textarea>
 			</fieldset>
+			<button type="submit">Submit</button>
 		</form>
 	</body>
 </html> 
