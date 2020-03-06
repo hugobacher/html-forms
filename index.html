@@ -10,10 +10,10 @@
 		<form action="done.html">
 			<fieldset>
 				<legend>Name</legend>
-				<label for="fname">First: <label>
+				<label for="fname">First: </label>
 				<input type="text" id="fname" name="fname">
-				<label for="lname">Last: <label>
-				<input type="text" id="fname" name="lname">
+				<label for="lname">Last: </label>
+				<input type="text" id="lname" name="lname">
 			</fieldset>
 			<fieldset>
 				<legend>Gender</legend>
@@ -35,21 +35,27 @@
 				</select>
 			</fieldset>
 			<fieldset>
-				<legend>Other facts</legend>
-				<label for="birthday">Birthday:</label>
+				<legend>Birthday</legend>
+				<label for="birthday">Birthday: </label>
 				<input type="date" id="birthday" name="birthday">
+			</fieldset>
+			<fieldset>
+				<legend>How did you find this?</legend>
+				<label for="friend">A friend: </label>
+				<input type="checkbox" id="friend" name="find" value="friend">
 				<br>
-				<label for="find">How did you find this website?</label>
+				<label for="family">A family member: </label>
+				<input type="checkbox" id="family" name="find" value="family">
 				<br>
-				<input type="checkbox" id="find" name="find" value="friend">A friend</input>
+				<label for="ads">Ads: </label>
+				<input type="checkbox" id="ads" name="find" value="ads">
 				<br>
-				<input type="checkbox" id="find" name="find" value="family">A family member</input>
-				<br>
-				<input type="checkbox" id="find" name="find" value="ads">Ads</input>
-				<br>
-				<input type="checkbox" id="find" name="find" value="google">Google</input>
-				<br>
-				<label for="interests">Your interests:</label>
+				<label for="google">Google: </label>
+				<input type="checkbox" id="google" name="find" value="google">
+			</fieldset>
+			<fieldset>
+				<legend>Interests</legend>
+				<label for="interests">Freetime:</label>
 				<textarea id="interests" name="interests"></textarea>
 			</fieldset>
 			<button type="submit">Submit</button>
